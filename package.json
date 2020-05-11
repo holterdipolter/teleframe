@@ -8,14 +8,16 @@
         "node-red-contrib-image-info": "0.1.1",
         "node-red-contrib-kodi": "0.2.8",
         "node-red-contrib-mytimeout": "3.2.0",
-        "node-red-contrib-persist": "1.0.3",
         "node-red-contrib-queue-gate": "1.4.0",
         "node-red-contrib-stoptimer": "0.0.7",
         "node-red-contrib-telegrambot": "7.1.1",
         "node-red-contrib-ui-media": "1.2.0",
         "node-red-contrib-wifiscan": "0.0.2",
         "node-red-node-base64": "0.2.1",
-        "node-red-node-ui-table": "0.3.1"
+        "node-red-node-ui-table": "0.3.1",
+        "node-red-contrib-schedex": "1.10.2",
+        "node-red-dashboard": "2.22.1",
+        "node-red-node-rbe": "0.2.8"
     },
     "node-red": {
         "settings": {
