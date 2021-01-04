@@ -5,7 +5,7 @@ Turn your old Raspi-Hardware into a remote-controlled picture frame for your eld
 
 ## About
 
-Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Arm based SoC connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it makes sure that it displays all messages and media automatically on screen.
+Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
 
 Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via a touch screen or configured and controlled via a web interface in the browser.
 
@@ -15,7 +15,9 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 - [Hardware prerequisites](#hardware-prerequisites)
 - [Software architecture and prerequisites](#software-architecture-and-prerequisites)
 - [Installation](#installation)
-- [Usage &amp; Configuration](#usage-&amp;-Configuration)
+	- [Automatic installation](#automatic-installation)
+	- [Manual installation](#manual-installation)
+- [Usage and configuration](#usage-and-configuration)
 	- [Touchscreen](#touchscreen)
 	- [Webinterface](#webinterface)
 		- [Images](#images)
@@ -27,7 +29,7 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 ## Hardware prerequisites
 
-**ARM-SoCs:** All Raspberry Pi boards from Raspi 1B+ upwards, as well as Raspi Zero W are supported. Older variants and other ARM SoCs may work, but have not been tested and may require software adjustments.
+**ARM-SoCs:** All Raspberry Pi boards from Raspi 1B+ upwards, as well as Raspi Zero W are supported. Older variants and other Linux computer (ARM SoCs are recommended to reduce power consumption) may work, but have not been tested and may require software adjustments.
 
 **Displays:** Basically, all touchscreens supported by Raspberry Pi boards can be used. Tested and recommended are Touchscreens from Waveshare (link).
 
@@ -47,38 +49,51 @@ BILD (Architektur)
 
 ## Installation
 
+### Automatic installation
+
+A script for automatic installation will be provided soon.
+
+
+### Manual installation
+
 Only Raspbian is supported so far. Other Distros might work.
 
-1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/)
-2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended
+1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/).
+2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended.
 3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal.
 
 1. Update and install software prerequisites:
 
-`sudo apt update && sudo apt upgrade`
-
-`sudo apt install kodi nginx`
+	```bash
+	sudo apt update && sudo apt upgrade
+	sudo apt install kodi nginx
+	```
 
 optional: Install OpenVPN for VPN access
-
-`sudo apt install openvpn`
+	
+	```bash
+	sudo apt install openvpn
+	```
 
 1. Configure kodi and nginx
-
-`sudo systemctl enable kodi nginx`
-
-`sudo systemctl start kodi nginx`
+	
+	```bash
+	sudo systemctl enable kodi nginx
+	sudo systemctl start kodi nginx
+	```
 
 1. Install Node.js and Node red
 
-`<(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`
+	```bash
+	bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+	```
 
 1. Open Node-Red Editor under http://<raspi-ip>:1880 and [enable git support](https://nodered.org/docs/user-guide/projects/)
 1. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe Git Url.
-2. When project is loaded, Teleframe WebUI is available under https://<raspi-ip>:1243
+2. When project is loaded, Teleframe WebUI is available under https://\&lt;raspi-ip\&gt;:1243
 
 
-## Usage &amp; Configuration
+## Usage and configuration
 
 ### Touchscreen
 
@@ -103,11 +118,11 @@ BILD
 
 **Navigation:** You can watch and control the image slideshow actually displayed on the device. Use navigation buttons to control the slideshow, use the stick button for preventing images from being automatically deleted or delete images using the trash button manually.
 
-_Note:_ If a message was attached to an image, you are able to delete only the message without deleting the image at the same time. Just click on the trash button and you are being asked whether you want to delete only text or both, image and text.
+*Note:* If a message was attached to an image, you are able to delete only the message without deleting the image at the same time. Just click on the trash button and you are being asked whether you want to delete only text or both, image and text.
 
 **General Settings:** Set up showtime, as well as max. images in the loop and trash.
 
-_Note_: Teleframe was intended to be able to operate completely autonomously and without additional intervention. To consider storage limitations, images as well as videos are stored in a loop with a predefined maximum size. The loop is working according to the first in, last out principle, therefore old images are moved to trash automatically when new images are arriving and the loop size has reached a predefined maximum.
+*Note:* Teleframe was intended to be able to operate completely autonomously and without additional intervention. To consider storage limitations, images as well as videos are stored in a loop with a predefined maximum size. The loop is working according to the first in, last out principle, therefore old images are moved to trash automatically when new images are arriving and the loop size has reached a predefined maximum.
 
 **Galerie:** Overview of all active images stored in the slideshow loop. You can delete or stick image or start the slideshow from a certain position.
 
@@ -144,9 +159,9 @@ You add new users using the following procedure:
 
 **Wifi:** Enter your Wifi credentials to connect to your Wifi.
 
-**FreeDNS:** Free Dynamic DNS service used to access Teleframe from outside your local network. Please visit [https://freedns.afraid.org/zc.php?from=L21lbnUv](https://freedns.afraid.org/zc.php?from=L21lbnUv), create an account and follow instructions on how to create your own subdomain. Having a new subdomain created, copy its direct URL (under Dynamic DNS section) and paste it to &quot;Update-URL&quot; in the FreeDNS section of the Teleframe-WebUI. Add the related subdomain and click on &quot;update&quot;.
+**FreeDNS:** Free Dynamic DNS service used to access Teleframe from outside your local network. Please visit [FreeDNS Homepage](https://freedns.afraid.org/zc.php?from=L21lbnUv), create an account and follow instructions on how to create your own subdomain. Having a new subdomain created, copy its direct URL (under Dynamic DNS section) and paste it to &quot;Update-URL&quot; in the FreeDNS section of the Teleframe-WebUI. Add the related subdomain and click on &quot;update&quot;.
 
-_Note:*_ You must set up a port forwarding rule in your local router to enable remote access. Choose Port 1243 as internal port and map it to the teleframe ip address.
+*Note:* You must set up a port forwarding rule in your local router to enable remote access. Choose Port `1243` as internal port and map it to the teleframe ip address.
 
 
 #### Admin
