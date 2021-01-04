@@ -12,7 +12,17 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 ## Table Of Contents
 
+- [Hardware prerequisites](#hardware-prerequisites)
+- [Software architecture and prerequisites](#software-architecture-and-prerequisites)
 - [Installation](#installation)
+- [Usage &amp; Configuration](#usage-&amp;-Configuration)
+	- [Touchscreen](#touchscreen)
+	- [Webinterface](#webinterface)
+		- [Images](#images)
+		- [Videos](#videos)
+		- [Telegram](#telegram)
+		- [System](#system)
+		- [Admin](#admin)
 
 
 ## Hardware prerequisites
@@ -39,13 +49,13 @@ BILD (Architektur)
 
 Only Raspbian is supported so far. Other Distros might work.
 
-1. Download newest version of Raspbian Lite [https://www.raspberrypi.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
-2. Copy Raspbian Image to SD-Card. Etcher https://www.balena.io/etcher/ is highly recommended
+1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/)
+2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended
 3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal.
 
 1. Update and install software prerequisites:
 
-`sudo apt update &amp;&amp; sudo apt upgrade`
+`sudo apt update && sudo apt upgrade`
 
 `sudo apt install kodi nginx`
 
@@ -63,12 +73,9 @@ optional: Install OpenVPN for VPN access
 
 `<(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`
 
-1. Open Node-Red Editor under http://<raspi-ip\&gt;:1880 and enable git support:
-
-[https://nodered.org/docs/user-guide/projects/](https://nodered.org/docs/user-guide/projects/)
-
+1. Open Node-Red Editor under http://<raspi-ip>:1880 and [enable git support](https://nodered.org/docs/user-guide/projects/)
 1. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe Git Url.
-2. When project is loaded, Teleframe WebUI is available under https://\&lt;raspi-ip\&gt;:1243
+2. When project is loaded, Teleframe WebUI is available under https://<raspi-ip>:1243
 
 
 ## Usage &amp; Configuration
@@ -88,7 +95,7 @@ Two finger long press: Turn off display
 
 ### Webinterface
 
-While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open https://\&lt;raspi-ip\&gt;:1243 in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
+While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open https://<raspi-ip>:1243 in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
 
 #### Images
 
