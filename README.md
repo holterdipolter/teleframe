@@ -1,9 +1,9 @@
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/icon.png" alt="teleframe"></a>
+</p>
+
 Teleframe
 ============
-
-<p align="center">
-	<a><img src="https://simonwedel.de/files/teleframe/splash2.png" alt="teleframe"></a>
-</p>
 
 Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends! Or just for yourself!
 
@@ -12,6 +12,7 @@ Turn your old Raspi-Hardware into a remote-controlled picture frame for your eld
 Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
 
 Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via a touch screen or configured and controlled via a web interface in the browser.
+
 
 <p align="center">
 	<a><img src="https://simonwedel.de/files/teleframe/teleframe.jpg" alt="teleframe"></a>
@@ -118,13 +119,10 @@ Teleframe supports just a few simple touchscreen gestures to reduce usage comple
 
 While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open `https://<raspi-ip>:1243` in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
 
-<p align="center">
-	<a><img src="https://simonwedel.de/files/teleframe/webinterface/navbar-low.jpg" alt="teleframe"></a>
-</p>
 
 #### Images
 
-<p align="center">
+<p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/images-low.jpg" alt="teleframe"></a>
 </p>
 
@@ -147,7 +145,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 
 #### Videos
 
-<p align="center">
+<p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/videos-low.jpg" alt="teleframe"></a>
 </p>
 
@@ -158,7 +156,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 
 #### Telegram
 
-<p align="center">
+<p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/telegram-low.jpg" alt="teleframe"></a>
 </p>
 
@@ -166,14 +164,15 @@ Add, rename and delete users to/from the list of users allowed to send messages 
 
 You add new users using the following procedure:
 
-1. Activate &quot;allow new user&quot; button
+1. Activate `allow new user` button
 2. Send a message with random content to the telegram bot
 3. The Telegram users unique Chat-ID will appear instantly. Add a username and click on add button. The new user with Chat-ID will be entered in the user list and is now allowed to send messages to the Teleframe bot.
+4. Deactivate `allow new user` button
 
 
 #### System
 
-<p align="center">
+<p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/system-low.jpg" alt="teleframe"></a>
 </p>
 
@@ -183,15 +182,15 @@ You add new users using the following procedure:
 
 **Wifi:** Enter your Wifi credentials to connect to your Wifi.
 
-**FreeDNS:** Free Dynamic DNS service used to access Teleframe from outside your local network. Please visit [FreeDNS Homepage](https://freedns.afraid.org/zc.php?from=L21lbnUv), create an account and follow instructions on how to create your own subdomain. Having a new subdomain created, copy its direct URL (under Dynamic DNS section) and paste it to &quot;Update-URL&quot; in the FreeDNS section of the Teleframe-WebUI. Add the related subdomain and click on &quot;update&quot;.
+**FreeDNS:** Free Dynamic DNS service used to access Teleframe from outside your local network. Please visit [FreeDNS Homepage](https://freedns.afraid.org/zc.php?from=L21lbnUv), create an account and follow instructions on how to create your own subdomain. Having a new subdomain created, copy its direct URL (under Dynamic DNS section) and paste it to `Update-URL` in the FreeDNS section of the Teleframe-WebUI. Add the related subdomain and click on `update`.
 
 *Note:* You must set up a port forwarding rule in your local router to enable remote access. Choose Port `1243` as internal port and map it to the teleframe ip address.
 
 
 #### Admin
 
-<p align="center">
+<p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/admin-low.jpg" alt="teleframe"></a>
 </p>
 
-For experienced users only!!! Several options for debugging, restoring Nginx and Node-red default setting, resetting the whole system or specific internal procedures, and other stuff, usually not needed if everything runs trouble free.
+For experienced users only!!! Several options for debugging, restoring Nginx and Node-Red default setting, resetting the whole system or specific internal procedures, and other stuff, usually not needed if everything runs trouble free.
