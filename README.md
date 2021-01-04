@@ -6,10 +6,8 @@
 	<h1>Teleframe</h1>
 	<p>
         Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!
-    </p>
-	<p>
 		Or just for yourself!
-	</p>
+    </p>
 </div>
 
 ## Table Of Contents
@@ -46,7 +44,7 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 **ARM-SoCs:** All Raspberry Pi boards from Raspi 1B+ upwards, as well as Raspi Zero W are supported. Older variants and other Linux computer (ARM SoCs are recommended to reduce power consumption) may work, but have not been tested and may require software adjustments.
 
-**Displays:** Basically, all touchscreens supported by Raspberry Pi boards can be used. Tested and recommended are Touchscreens from Waveshare (link).
+**Displays:** Basically, all touchscreens supported by Raspberry Pi boards can be used. Tested and recommended are Touchscreens from [Waveshare](https://www.waveshare.com/product/displays.htm).
 
 **Wifi:** For Raspberry Pi 1B+ an additional Wifi dongle is required. Tested and recommended are cheap Realtek rtl8188eu chips. Other chips might also work, but must support AP mode. Please note that additional drivers for rtl8188eu are needed (link), as the Raspbian default kernel driver doesn&#39;t support AP-Mode.
 
@@ -127,7 +125,7 @@ Teleframe supports just a few simple touchscreen gestures to reduce usage comple
 While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open `https://<raspi-ip>:1243` in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
 
 
-#### Images
+#### IMAGES
 
 <p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/images-low.jpg" alt="teleframe"></a>
@@ -150,7 +148,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 **If new images arrive…:** Set several options to inform the Teleframe user about new messages, either by sound or onscreen info.
 
 
-#### Videos
+#### VIDEOS
 
 <p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/videos-low.jpg" alt="teleframe"></a>
@@ -161,7 +159,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 **Settings:** Set max. number of videos are being stored until old videos will be deleted. If you have issues playing videos on the Teleframe, try using the option &quot;convert incoming videos&quot;. Just use it if really needed, as transcoding is usually painfully slow especially on old Raspis.
 
 
-#### Telegram
+#### TELEGRAM
 
 <p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/telegram-low.jpg" alt="teleframe"></a>
@@ -177,7 +175,7 @@ You add new users using the following procedure:
 4. Deactivate `allow new user` button
 
 
-#### System
+#### SYSTEM
 
 <p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/system-low.jpg" alt="teleframe"></a>
@@ -194,7 +192,7 @@ You add new users using the following procedure:
 *Note:* You must set up a port forwarding rule in your local router to enable remote access. Choose Port `1243` as internal port and map it to the teleframe ip address.
 
 
-#### Admin
+#### ADMIN
 
 <p align="left">
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/admin-low.jpg" alt="teleframe"></a>
