@@ -5,23 +5,16 @@
 	<p></p>
 	<h1>Teleframe</h1>
 	<p>
-        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends! Or just for yourself!
+        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!
     </p>
+	<p>
+		Or just for yourself!
+	</p>
 </div>
-
-## About
-
-Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
-
-Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via a touch screen or configured and controlled via a web interface in the browser.
-
-
-<p align="center">
-	<a><img src="https://simonwedel.de/files/teleframe/teleframe.jpg" alt="teleframe"></a>
-</p>
 
 ## Table Of Contents
 
+- [About](#about)
 - [Hardware prerequisites](#hardware-prerequisites)
 - [Software architecture and prerequisites](#software-architecture-and-prerequisites)
 - [Installation](#installation)
@@ -35,6 +28,18 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 		- [Telegram](#telegram)
 		- [System](#system)
 		- [Admin](#admin)
+		
+
+## About
+
+Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
+
+Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via a touch screen or configured and controlled via a web interface in the browser.
+
+
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/teleframe.jpg" alt="teleframe"></a>
+</p>
 
 
 ## Hardware prerequisites
