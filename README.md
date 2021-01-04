@@ -5,8 +5,7 @@
 	<p></p>
 	<h1>Teleframe</h1>
 	<p>
-        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!
-		Or just for yourself!
+        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!<br>Or just for yourself!
     </p>
 </div>
 
@@ -36,7 +35,7 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 
 <p align="center">
-	<a><img src="https://simonwedel.de/files/teleframe/teleframe.jpg" alt="teleframe"></a>
+	<a><img src="https://simonwedel.de/files/teleframe/overview.jpg" alt="teleframe"></a>
 </p>
 
 
@@ -56,8 +55,6 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 Kodi is used to display videos and pictures as a slidehow with smooth transitions. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing pictures and videos on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions.
 
 Teleframe therefore does not handle the rendering itself, but controls Kodi via REST API.
-
-BILD (Architektur)
 
 
 ## Installation
