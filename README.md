@@ -1,6 +1,10 @@
 Teleframe
 ============
 
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/splash2.png" alt="teleframe"></a>
+</p>
+
 Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends! Or just for yourself!
 
 ## About
@@ -9,6 +13,9 @@ Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Li
 
 Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via a touch screen or configured and controlled via a web interface in the browser.
 
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/teleframe.jpg" alt="teleframe"></a>
+</p>
 
 ## Table Of Contents
 
@@ -56,7 +63,7 @@ A script for automatic installation will be provided soon.
 
 ### Manual installation
 
-Only Raspbian is supported so far. Other Distros might work.
+Only Raspbian is supported so far. Other distros might work.
 
 1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/).
 2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended.
@@ -89,7 +96,7 @@ Only Raspbian is supported so far. Other Distros might work.
 	```
 
 7. Open Node-Red Editor under `http://<raspi-ip>:1880` and [enable git support](https://nodered.org/docs/user-guide/projects/)
-8. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe Git Url.
+8. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe git url.
 9. When project is loaded, Teleframe WebUI is available under `https://<raspi-ip>:1243`
 
 
@@ -97,13 +104,13 @@ Only Raspbian is supported so far. Other Distros might work.
 
 ### Touchscreen
 
-Teleframe supports just a few simple touchscreen gestures to reduce usage complexity. However, most important commands are supported, like:
+Teleframe supports just a few simple touchscreen gestures to reduce usage complexity. However, most important commands are supported:
 
 | **Gesture**			| **Command** 										|
 | ----------			| -----------										| 
-| One finger tap		| Start stop slideshow 								|
-| Swipe left/right		| Previous/next image 								|
-| One finger long press	| Turn on display / jump to newest message or Image |
+| One finger tap		| Start / stop slideshow 							|
+| Swipe left / right	| Previous / next image 							|
+| One finger long press	| Turn on display / jump to newest message or image |
 | Two finger long press	| Turn off display									|
 
 
@@ -111,9 +118,15 @@ Teleframe supports just a few simple touchscreen gestures to reduce usage comple
 
 While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open `https://<raspi-ip>:1243` in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
 
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/navbar-low.jpg" alt="teleframe"></a>
+</p>
+
 #### Images
 
-BILD
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/images-low.jpg" alt="teleframe"></a>
+</p>
 
 **Navigation:** You can watch and control the image slideshow actually displayed on the device. Use navigation buttons to control the slideshow, use the stick button for preventing images from being automatically deleted or delete images using the trash button manually.
 
@@ -134,12 +147,20 @@ BILD
 
 #### Videos
 
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/videos-low.jpg" alt="teleframe"></a>
+</p>
+
 **Navigation:** All received Videos are shown up in the video gallery at the bottom of the navigation section. Click on a video to load in in the preview, where you can watch your video in the browser. Use Navigation Buttons to start the video remotely on the Teleframe-Screen.
 
 **Settings:** Set max. number of videos are being stored until old videos will be deleted. If you have issues playing videos on the Teleframe, try using the option &quot;convert incoming videos&quot;. Just use it if really needed, as transcoding is usually painfully slow especially on old Raspis.
 
 
 #### Telegram
+
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/telegram-low.jpg" alt="teleframe"></a>
+</p>
 
 Add, rename and delete users to/from the list of users allowed to send messages and media.
 
@@ -151,6 +172,10 @@ You add new users using the following procedure:
 
 
 #### System
+
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/system-low.jpg" alt="teleframe"></a>
+</p>
 
 **Screen:** Turn on or off the screen manually or set timers for switching the screen on and off automatically.
 
@@ -164,5 +189,9 @@ You add new users using the following procedure:
 
 
 #### Admin
+
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/admin-low.jpg" alt="teleframe"></a>
+</p>
 
 For experienced users only!!! Several options for debugging, restoring Nginx and Node-red default setting, resetting the whole system or specific internal procedures, and other stuff, usually not needed if everything runs trouble free.
