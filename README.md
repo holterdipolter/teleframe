@@ -1,11 +1,13 @@
-<p align="center">
-	<a><img src="https://simonwedel.de/files/teleframe/icon.png" alt="teleframe"></a>
-</p>
-
-Teleframe
-============
-
-Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends! Or just for yourself!
+<div align="center">
+	<p>
+		<a><img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"></a>
+	</p>
+	<p></p>
+	<h1>Teleframe</h1>
+	<p>
+        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends! Or just for yourself!
+    </p>
+</div>
 
 ## About
 
