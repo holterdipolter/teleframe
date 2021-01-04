@@ -62,35 +62,35 @@ Only Raspbian is supported so far. Other Distros might work.
 2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended.
 3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal.
 
-1. Update and install software prerequisites:
+4. Update and install software prerequisites:
 
 	```bash
 	sudo apt update && sudo apt upgrade
 	sudo apt install kodi nginx
 	```
 
-optional: Install OpenVPN for VPN access
+	optional: Install OpenVPN for VPN access
 	
 	```bash
 	sudo apt install openvpn
 	```
 
-1. Configure kodi and nginx
+5. Configure kodi and nginx
 	
 	```bash
 	sudo systemctl enable kodi nginx
 	sudo systemctl start kodi nginx
 	```
 
-1. Install Node.js and Node red
+6. Install Node.js and Node-red
 
 	```bash
 	bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 	```
 
-1. Open Node-Red Editor under http://<raspi-ip>:1880 and [enable git support](https://nodered.org/docs/user-guide/projects/)
-1. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe Git Url.
-2. When project is loaded, Teleframe WebUI is available under https://\&lt;raspi-ip\&gt;:1243
+7. Open Node-Red Editor under `http://<raspi-ip>:1880` and [enable git support](https://nodered.org/docs/user-guide/projects/)
+8. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe Git Url.
+9. When project is loaded, Teleframe WebUI is available under `https://<raspi-ip>:1243`
 
 
 ## Usage and configuration
@@ -99,18 +99,17 @@ optional: Install OpenVPN for VPN access
 
 Teleframe supports just a few simple touchscreen gestures to reduce usage complexity. However, most important commands are supported, like:
 
-One finger tap: Start stop slideshow
-
-Swipe left/right: Previous/next image
-
-One finger long press: Turn on display / jump to newest message or Image
-
-Two finger long press: Turn off display
+| **Gesture**			| **Command** 										|
+| ----------			| -----------										| 
+| One finger tap		| Start stop slideshow 								|
+| Swipe left/right		| Previous/next image 								|
+| One finger long press	| Turn on display / jump to newest message or Image |
+| Two finger long press	| Turn off display									|
 
 
 ### Webinterface
 
-While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open https://<raspi-ip>:1243 in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
+While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open `https://<raspi-ip>:1243` in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
 
 #### Images
 
