@@ -76,11 +76,11 @@ Only Raspbian is supported so far. Other distros might work.
 2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended.
 3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal.
 
-4. Update and install software prerequisites:
+4. Update and install prerequisites/dependencies:
 
 	```bash
 	sudo apt update && sudo apt upgrade
-	sudo apt install kodi nginx
+	sudo apt install kodi nginx ffmpeg
 	```
 
 	optional: Install OpenVPN for VPN access
@@ -89,7 +89,7 @@ Only Raspbian is supported so far. Other distros might work.
 	sudo apt install openvpn
 	```
 
-5. Configure kodi and nginx
+5. Start an enable kodi and nginx on system boot
 	
 	```bash
 	sudo systemctl enable kodi nginx
