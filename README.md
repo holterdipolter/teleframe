@@ -52,7 +52,9 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 ## Software architecture and prerequisites
 
-
+<p align="center">
+	<a><img src="https://simonwedel.de/files/teleframe/softArch.jpg" alt="teleframe"></a>
+</p>
 
 Kodi is used to display videos and pictures as a slidehow with smooth transitions. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing pictures and videos on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions.
 
@@ -144,7 +146,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 
 **Textoverlay:** : Adjust message text related format settings like size, font, colour etc. as well as size and position of the sender&#39;s name.
 
-**If new images arrive…:** Set several options to inform the Teleframe user about new messages, either by sound or onscreen info.
+**If new images arrive…:** Set several options to notify the Teleframe user about new messages, either by sound or onscreen info.
 
 
 #### VIDEOS
