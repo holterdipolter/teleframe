@@ -2,8 +2,8 @@
 	<p>
 		<a><img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"></a>
 	</p>
-	<p></p>
 	<h1>Teleframe</h1>
+	<a><img src="https://img.shields.io/github/last-commit/holterdipolter/teleframe.svg" alt="Latest Comit"></a>
 	<p>
         Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!<br>Or just for yourself!
     </p>
@@ -31,7 +31,7 @@
 
 Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
 
-Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via a touch screen or configured and controlled via a webinterface in the browser or as progressive web app. This enables externals, e.g. family members to manage and control the device remotely.
+Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via touchscreen or webinterface in the browser or as progressive web app. This enables externals, e.g. family members to manage and control the device remotely.
 
 
 <p align="center">
