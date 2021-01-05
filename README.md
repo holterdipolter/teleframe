@@ -74,7 +74,7 @@ Only Raspbian is supported so far. Other distros might work.
 
 1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/)
 2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended
-3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal
+3. Boot Raspbian and set up wifi using raspi config by enter `raspi-config` in terminal
 
 4. Update and install prerequisites/dependencies:
 
