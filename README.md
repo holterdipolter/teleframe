@@ -4,7 +4,7 @@
 		<h1>Teleframe</h1>
 	</p>
 	<p>
-        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!<br>Or just for yourself!
+        Turn your old Raspi-Hardware into a remote-controlled picture frame for your elderly family members and friends!<br>Or simply for yourself!
 	</p>
 	<p>
 		<a><img src="https://img.shields.io/github/last-commit/holterdipolter/teleframe.svg" alt="Latest Comit"></a>
