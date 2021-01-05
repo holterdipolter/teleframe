@@ -1,0 +1,21 @@
+server {
+    listen 1243 ssl;
+	
+	ssl_certificate		/home/pi/sslcerts/node-cert.pem; # fügt Zertifikat hinzu
+    ssl_certificate_key /home/pi/sslcerts/node-key.pem; # fügt privaten Schlüssel
+	
+	ssl_protocols       TLSv1 TLSv1.1 TLSv1.2; # definiert die Protokolle
+	ssl_ciphers         HIGH:!aNULL:!MD5; # definiert die Ciphersuites
+	
+	keepalive_timeout   100;
+
+	location / {
+        proxy_pass http://127.0.0.1:1880/ui;
+    }
+    location /ui {
+        proxy_pass http://127.0.0.1:1880/ui;
+    }
+	location /telegram {
+        proxy_pass http://127.0.0.1/telegram/;
+    }
+}
