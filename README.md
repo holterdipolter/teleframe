@@ -1,6 +1,6 @@
 <div align="center">
 	<p>
-		<a><img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"></a>
+		<a><img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"></a><br>
 		<a><img src="https://img.shields.io/github/last-commit/holterdipolter/teleframe.svg" alt="Latest Comit"></a>
 	</p>
 	<h1>Teleframe</h1>
