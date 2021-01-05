@@ -1,6 +1,6 @@
 <div align="center">
 	<p>
-		<a><img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"></a><br>
+		<img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"><br>
 		<h1>Teleframe</h1>
 	</p>
 	<p>
