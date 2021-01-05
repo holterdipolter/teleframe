@@ -172,7 +172,7 @@ You add new users using the following procedure:
 
 1. Activate `allow new user` button.
 2. Send a message with random content to the telegram bot.
-3. The Telegram users unique Chat-ID will appear instantly. Add a username and click on add button. The new user with Chat-ID will be entered in the user list and is now allowed to send messages to the Teleframe bot.
+3. The Telegram users unique Chat-ID will appear instantly. Add a username and click on `+` button. The new user with Chat-ID will be entered in the user list and is now allowed to send messages to the Teleframe bot.
 4. Deactivate `allow new user` button.
 
 
