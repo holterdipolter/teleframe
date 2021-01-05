@@ -1,6 +1,6 @@
 <div align="center">
 	<p>
-		<img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"><br>
+		<a><img src="https://simonwedel.de/files/teleframe/icon221x200.png" alt="teleframe"></a><br>
 		<h1>Teleframe</h1>
 	</p>
 	<p>
@@ -47,7 +47,7 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 **Displays:** Basically, all touchscreens supported by Raspberry Pi boards can be used. Tested and recommended are Touchscreens from [Waveshare](https://www.waveshare.com/product/displays.htm).
 
-**Wifi:** For Raspberry Pi 1B+ an additional Wifi dongle is required. Tested and recommended are cheap Realtek rtl8188eu chips. Other chips might also work, but must support AP mode. Please note that additional drivers for rtl8188eu are needed (link), as the Raspbian default kernel driver doesn&#39;t support AP-Mode.
+**Wifi:** For Raspberry Pi 1B+ an additional Wifi dongle is required. Tested and recommended are cheap Realtek rtl8188eu chips. Other chips might also work, but must support AP mode. Please note that additional [drivers](github.com/lwfinger/rtl8188eu) for rtl8188eu are needed, as the Raspbian default kernel driver doesn&#39;t support AP-Mode.
 
 **Loudspeaker:** In order to watch videos with audio or you want to use sound notifications, a loudspeaker must be connected. There are no special limitations other than a standard 3.5mm headphone jack is needed (not supported by raspi zero w!).
 
@@ -58,9 +58,7 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 	<a><img src="https://simonwedel.de/files/teleframe/softArch.jpg" alt="teleframe"></a>
 </p>
 
-Kodi is used to display videos and pictures as a slidehow with smooth transitions. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing pictures and videos on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions.
-
-Teleframe therefore does not handle the rendering itself, but controls Kodi via REST API.
+Kodi is used to display videos and pictures as a slidehow with smooth transitions. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing pictures and videos on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions. Teleframe therefore does not handle the rendering itself, but controls Kodi via REST API.
 
 
 ## Installation
@@ -74,9 +72,9 @@ A script for automatic installation will be provided soon.
 
 Only Raspbian is supported so far. Other distros might work.
 
-1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/).
-2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended.
-3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal.
+1. Download newest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/)
+2. Copy Raspbian Image to SD-Card. [Etcher](https://www.balena.io/etcher/) is highly recommended
+3. Boot Raspbian, and set up wifi using raspi config by enter `raspi-config` in terminal
 
 4. Update and install prerequisites/dependencies:
 
@@ -91,7 +89,7 @@ Only Raspbian is supported so far. Other distros might work.
 	sudo apt install openvpn
 	```
 
-5. Start an enable kodi and nginx on system boot
+5. Start and enable kodi and nginx on system boot
 	
 	```bash
 	sudo systemctl enable kodi nginx
@@ -105,7 +103,7 @@ Only Raspbian is supported so far. Other distros might work.
 	```
 
 7. Open Node-Red Editor under `http://<raspi-ip>:1880` and [enable git support](https://nodered.org/docs/user-guide/projects/)
-8. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe git url.
+8. Create new Node-Red Project using &quot;Clone project&quot; and add Teleframe git url
 9. When project is loaded, Teleframe WebUI is available under `https://<raspi-ip>:1243`
 
 
