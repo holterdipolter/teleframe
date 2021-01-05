@@ -129,7 +129,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 #### IMAGES
 
 <p align="left">
-	<a><img src="https://simonwedel.de/files/teleframe/webinterface/images-low.jpg" alt="teleframe"></a>
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/images-lowres.jpg" alt="images"></a>
 </p>
 
 **Navigation:** You can watch and control the image slideshow actually displayed on the device. Use navigation buttons to control the slideshow, use the stick button for preventing images from being automatically deleted or delete images using the trash button manually.
@@ -152,7 +152,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 #### VIDEOS
 
 <p align="left">
-	<a><img src="https://simonwedel.de/files/teleframe/webinterface/videos-low.jpg" alt="teleframe"></a>
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/videos-lowres.jpg" alt="videos"></a>
 </p>
 
 **Navigation:** All received Videos are shown up in the video gallery at the bottom of the navigation section. Click on a video to load in in the preview, where you can watch your video in the browser. Use Navigation Buttons to start the video remotely on the Teleframe-Screen.
@@ -163,7 +163,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 #### TELEGRAM
 
 <p align="left">
-	<a><img src="https://simonwedel.de/files/teleframe/webinterface/telegram-low.jpg" alt="teleframe"></a>
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/telegram-lowres.jpg" alt="telegram"></a>
 </p>
 
 Add, rename and delete users to/from the list of users allowed to send messages and media.
@@ -179,7 +179,7 @@ You add new users using the following procedure:
 #### SYSTEM
 
 <p align="left">
-	<a><img src="https://simonwedel.de/files/teleframe/webinterface/system-low.jpg" alt="teleframe"></a>
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/system-lowres.jpg" alt="system"></a>
 </p>
 
 **Screen:** Turn on or off the screen manually or set timers for switching the screen on and off automatically.
@@ -196,7 +196,7 @@ You add new users using the following procedure:
 #### ADMIN
 
 <p align="left">
-	<a><img src="https://simonwedel.de/files/teleframe/webinterface/admin-low.jpg" alt="teleframe"></a>
+	<a><img src="https://simonwedel.de/files/teleframe/webinterface/admin-lowres.jpg" alt="admin"></a>
 </p>
 
 For experienced users only!!! Several options for debugging, restoring Nginx and Node-Red default setting, resetting the whole system or specific internal procedures, and other stuff, usually not needed if everything runs trouble free.
