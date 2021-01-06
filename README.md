@@ -33,7 +33,7 @@
 
 Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
 
-Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously, but can also be operated via touchscreen or webinterface in the browser or as progressive web app. This enables externals, e.g. family members to manage and control the device remotely.
+Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously but can also be operated via touchscreen or webinterface in the browser or as progressive web app. This enables externals, e.g. family members to manage and control the device remotely.
 
 
 <p align="center">
@@ -43,11 +43,11 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 ## Hardware prerequisites
 
-**ARM-SoCs:** All Raspberry Pi boards from Raspi 1B+ upwards, as well as Raspi Zero W are supported. Older variants and other Linux computer (ARM SoCs are recommended to reduce power consumption) may work, but have not been tested and may require software adjustments.
+**ARM-SoCs:** All Raspberry Pi boards from Raspi 1B+ upwards, as well as Raspi Zero W are supported. Older models and other Linux computer may work, but have not been tested and may require software adjustments.
 
-**Displays:** Basically, all touchscreens supported by Raspberry Pi boards can be used. Tested and recommended are Touchscreens from [Waveshare](https://www.waveshare.com/product/displays.htm).
+**Displays:** Basically, all touchscreens supported by Raspberry Pi boards can be used. Tested and recommended are Touchscreens from [Waveshare](https://www.waveshare.com/product/displays.htm) or the [official Raspberry Pi 7 inch Touchscreen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/).
 
-**Wifi:** For Raspberry Pi 1B+ an additional Wifi dongle is required. Tested and recommended are cheap Realtek rtl8188eu chips. Other chips might also work, but must support AP mode. Please note that additional [drivers](github.com/lwfinger/rtl8188eu) for rtl8188eu are needed, as the Raspbian default kernel driver doesn&#39;t support AP-Mode.
+**Wifi:** For Raspberry Pi 1B+ an additional Wifi dongle is required. Tested and recommended are cheap Realtek rtl8188eu chips. Other chips might also work but must support AP mode. Please note that additional [drivers](github.com/lwfinger/rtl8188eu) for rtl8188eu are needed, as the Raspbian default kernel driver doesn&#39;t support AP-Mode.
 
 **Loudspeaker:** In order to watch videos with audio or you want to use sound notifications, a loudspeaker must be connected. There are no special limitations other than a standard 3.5mm headphone jack is needed (not supported by raspi zero w!).
 
@@ -58,7 +58,9 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 	<a><img src="https://simonwedel.de/files/teleframe/softArch.jpg" alt="teleframe"></a>
 </p>
 
-Kodi is used to display videos and pictures as a slidehow with smooth transitions. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing pictures and videos on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions. Teleframe therefore does not handle the rendering itself, but controls Kodi via REST API.
+To enhance the level of security and to provide SSL support, the web server nginx configured as reverse proxy handles network traffic over https between Teleframe device and its clients using the webinterface.
+
+Kodi is used to present videos and pictures as a slideshow and enables smooth transitions also on low power devices. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing media on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions. Teleframe therefore does not handle the rendering itself but controls Kodi via REST API.
 
 
 ## Installation
