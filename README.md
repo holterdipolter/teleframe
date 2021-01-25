@@ -33,7 +33,7 @@
 
 Teleframe is a Node-Red based open source app that turns your Raspberry Pi or Linux computer connected to a touchscreen display into a digital picture frame. Using the Messenger App Telegram, you can send pictures, videos and messages to Teleframe while it ensures that all messages and media are displayed in an automatic slideshow on screen.
 
-Teleframe is designed primarily for seniors or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously but can also be operated via touchscreen or webinterface in the browser or as progressive web app. This enables externals, e.g. family members to manage and control the device remotely.
+Teleframe is designed primarily for elderly people or people with disabilities who can&#39;t or don&#39;t want to use computers/mobiles/tablets. Once set up, Teleframe works completely autonomously but can also be operated via touchscreen or webinterface in the browser or as progressive web app. This enables externals, e.g. family members to manage and control the device remotely.
 
 
 <p align="center">
@@ -60,7 +60,7 @@ Teleframe is designed primarily for seniors or people with disabilities who can&
 
 To enhance the level of security and to provide SSL support, the web server nginx configured as reverse proxy handles network traffic over https between Teleframe device and its clients using the webinterface.
 
-Kodi is used to present videos and pictures as a slideshow and enables smooth transitions also on low power devices. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing media on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions. Teleframe therefore does not handle the rendering itself but controls Kodi via REST API.
+Kodi is used to present videos and pictures as a slideshow and enables smooth transitions also on low power devices. Kodi is actually a popular, very powerful media centre application, which at first glance seem too extensive for the simple task of showing media on a display. However, compared to appropriate libraries providing gpu support, it makes optimal use of GPU acceleration also on older Raspberry Pi boards, which is important to enable smooth transitions. Teleframe therefore does not handle the rendering itself but controls Kodi via JSON-RPC API.
 
 
 ## Installation
@@ -117,15 +117,15 @@ Teleframe supports just a few simple touchscreen gestures to reduce usage comple
 
 | **Gesture**			| **Command** 										|
 | ----------			| -----------										| 
-| One finger tap		| Start / stop slideshow 							|
+| One finger tap		| Play / pause slideshow 							|
 | Swipe left / right	| Previous / next image 							|
-| One finger long press	| Turn on display / jump to newest message or image |
+| One finger long press	| Turn on display + jump to newest message or image |
 | Two finger long press	| Turn off display									|
 
 
 ### Webinterface
 
-While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open `https://<raspi-ip>:1243` in your browser, login with username and password and check out navigation panel behind hamburger menu at the top left.
+While touchcontrol is limited, Teleframe is highly configurable and controllable using the build in WebUI. Open `https://<raspi-ip>:1243` in your browser, login with username and password and check out navigation panel behind hamburger menu button at the top left.
 
 
 #### IMAGES
@@ -157,9 +157,9 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/videos-low.jpg" alt="videos"></a>
 </p>
 
-**Navigation:** All received Videos are shown up in the video gallery at the bottom of the navigation section. Click on a video to load in in the preview, where you can watch your video in the browser. Use Navigation Buttons to start the video remotely on the Teleframe-Screen.
+**Navigation:** All received Videos are shown up in the video gallery at the bottom of the navigation section. Click on a video for previewing within the browser. Use Navigation Buttons to start the video remotely on the Teleframe screen.
 
-**Settings:** Set max. number of videos are being stored until old videos will be deleted. If you have issues playing videos on the Teleframe, try using the option &quot;convert incoming videos&quot;. Just use it if really needed, as transcoding is usually painfully slow especially on old Raspis.
+**Settings:** Set max. number of videos are being stored until old videos will be deleted. If you have issues playing videos on the Teleframe, try using the option `convert incoming videos`. Use it only if really needed, as transcoding is usually painfully slow especially on old Raspis.
 
 
 #### TELEGRAM
@@ -175,7 +175,7 @@ You add new users using the following procedure:
 1. Activate `allow new user` button
 2. Send a message with random content to the telegram bot
 3. The Telegram users unique Chat-ID will appear instantly. Add a username and click on `+` button. The new user with Chat-ID will be entered in the user list and is now allowed to send messages to the Teleframe bot
-4. Deactivate `allow new user` button
+4. Deactivate `allow new user` button (will automatically turn off after 10 min.)
 
 
 #### SYSTEM
