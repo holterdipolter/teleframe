@@ -146,7 +146,7 @@ While touchcontrol is limited, Teleframe is highly configurable and controllable
 
 **Trash:** Overview of all images in the trash. Images can be restored or finally deleted.
 
-**Textoverlay:** : Adjust message text related format settings like size, font, colour etc. as well as size and position of the sender&#39;s name.
+**Textoverlay:** Adjust message text related format settings like size, font, colour etc. as well as size and position of the sender&#39;s name.
 
 **If new images arrive…:** Set several options to notify the Teleframe user about new messages, either by sound or onscreen info.
 
@@ -192,7 +192,7 @@ You add new users using the following procedure:
 
 **FreeDNS:** Free Dynamic DNS service used to access Teleframe from outside your local network. Please visit [FreeDNS Homepage](https://freedns.afraid.org/zc.php?from=L21lbnUv), create an account and follow instructions on how to create your own subdomain. Having a new subdomain created, copy its direct URL (under Dynamic DNS section) and paste it to `Update-URL` in the FreeDNS section of the Teleframe-WebUI. Add the related subdomain and click on `update`.
 
-*Note:* You must set up a port forwarding rule in your local router to enable remote access. Choose Port `1243` as internal port and map it to the teleframe ip address.
+*Note:* You must set up a port forwarding rule in your local router to enable remote access. Choose Port `1243` as internal port and map it to the Teleframe ip address.
 
 
 #### ADMIN
@@ -201,4 +201,4 @@ You add new users using the following procedure:
 	<a><img src="https://simonwedel.de/files/teleframe/webinterface/admin-low.jpg" alt="admin"></a>
 </p>
 
-For experienced users only!!! Several options for debugging, restoring Nginx and Node-Red default setting, resetting the whole system or specific internal procedures, and other stuff, usually not needed if everything runs trouble free.
+For experienced users only!!! Several options for debugging, restoring Nginx and Node-Red default setting, resetting the whole system or specific internal procedures, and other stuff usually not needed if everything runs trouble free.
