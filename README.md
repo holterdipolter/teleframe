@@ -11,6 +11,11 @@
     </p>
 </div>
 
+## !!! Important !!!
+
+### This Project is currently not actively maintained and there are some issues in the installation process as well as with dependencies which are broken. If you don't want to tinker around, please be patient and wait for the next update!
+
+
 ## Table Of Contents
 
 - [About](#about)
